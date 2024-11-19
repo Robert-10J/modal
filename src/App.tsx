@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Modal from './components/Modal';
+import ViewerPDF from './components/ViewerPDF';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,7 +21,7 @@ function App() {
         isOpen={isModalOpen}
         onClose={closeModal}
       >
-        <p>Modal</p>
+        <ViewerPDF/>
       </Modal>
     </>
   );
